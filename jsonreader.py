@@ -25,6 +25,6 @@ for datapoint in dataset["images"]:
         output_list.append(buffer)
 
 
-with open("CleanURLOnly.csv", 'w') as csvfile:
+with open("CleanURLOnly.csv", 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(output_list)
